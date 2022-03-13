@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Hangman__Console_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WordBanks\**" />
+    <EmbeddedResource Remove="WordBanks\**" />
+    <None Remove="WordBanks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hangman Class">
+      <HintPath>..\..\Hangman Class\Hangman Class\bin\Release\net6.0\Hangman Class.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>
